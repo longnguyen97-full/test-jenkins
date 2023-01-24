@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Test') {
+        stage('Clone') {
             steps {
-                echo 'Testing..'
+                git 'https://github.com/longnguyen97-full/test-jenkins.git'
             }
         }
     }
